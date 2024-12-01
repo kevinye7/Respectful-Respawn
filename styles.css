@@ -1,0 +1,601 @@
+body {
+  /* Background */
+  background-color: whitesmoke;
+  background-image: url('');
+
+  /* Text */
+  font-family: Arial;
+  font-size: 16px;
+  color: #4A90E2;
+
+  /* Padding and Margins */
+  margin: 0px 0px;
+
+  /* Alignment */
+  text-align: center;
+}
+
+/* Headings */
+h1 {
+  font-size: 75px;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  color: #4A90E2;
+}
+
+/* Paragraph */
+p {
+  color: black;
+  padding: 10px;
+}
+
+/* Links */
+a {
+  font-size: 15px;
+}
+
+a:hover, a:active {
+  color: #4A90E2; 
+  text-decoration: underline; 
+}
+
+a:visited, a:link {
+  color: black; 
+  text-decoration: none; 
+}
+
+/* Ordered List */
+ol {
+  
+}
+
+ol li {
+  
+}
+
+/* Unordered List */
+ul {
+  
+}
+
+ul li {
+  
+}
+
+/* General Button Styles */
+button {
+  background-color: #4A90E2;
+  border: none;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding: 15px 32px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button a:link{
+  color: white;
+}
+
+/* Specific Theme Button */
+#theme-button {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#header-button a {
+  background-color: #4A90E2;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#header-button a:hover {
+  text-decoration: none;
+}
+
+#header-button {
+  cursor: pointer;
+}
+
+/* Flex Containers */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* Individual Flex Items */
+.flex-item {
+  background: white;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Specific Flex Item Styles */
+.flex-item:nth-of-type(1) {
+   
+}
+.flex-item:nth-of-type(2) {
+
+}
+.flex-item:nth-of-type(3) {
+  
+}
+
+/* Navbar */
+.navbar {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+  width: 100%;
+  z-index: 1;
+  padding: 10px 0px;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 5px 25px;
+  /* position: fixed; */
+  /* top: 0; */
+  /* left: 0; */
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+  /* z-index: 1; */
+}
+
+.navbar ul li {
+  margin: 10px;
+}
+
+.navbar ul li a {
+  display: block;
+  color: black;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline overline;
+}
+
+#navbar-img {
+  padding: 5px 25px;
+}
+
+/* Header */
+.header-container {
+}
+
+.header-item {
+  position: absolute;
+  top: 30%;
+  left: 50%; 
+  transform: translate(-50%, -30%); /* Ensures the text is centered */
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.header-item h1 {
+  font-size: 150px;
+}
+
+.header-item:nth-of-type(1){
+  
+}
+
+.header-item:nth-of-type(2) {
+  
+}
+
+/* Example: This styles an element with an id="header-img" */
+#header-img {
+
+}
+
+.section-header {
+  padding-top: 50px;
+}
+
+.section-header h2 {
+  margin-top: 0px;
+}
+
+/* About */
+.about-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-content {
+  width: 50%;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-content img {
+  width: 98%;
+}
+
+/* Impact */
+.impact-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.impact-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 100px;
+  width: 95%;
+}
+
+.impact-content div {
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+#overwatch {
+  padding: 30px;
+}
+
+/* Petition */
+.petition-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.petition-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 75%;
+  margin: auto;
+  gap: 100px;
+}
+
+.petition-info {
+  width: 60%;
+}
+
+.petition-signatures {
+  width: 40%;
+}
+
+.petition-info, .petition-signatures {
+  height: 500px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.petition-description {
+  color: black;
+  text-align: left;
+}
+
+.petition-signatures h3 {
+  text-align: left;
+}
+
+#sign-petition {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 25px;
+  text-align: left;
+}
+
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background:pink;
+}
+
+/* the modal that covers the background and prevents user interactions */
+.modal {
+  display: none; /* hides the modal from view by default*/
+  position: fixed; /* keeps the modal in one place */
+  z-index: 2; /* positions the modal on top of all other elements on the screen */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black - other elements can still be seen */
+  flex-direction: column; /* these flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+}
+
+/* box that contains all the content and images */
+.modal-content {
+  background-color: whitesmoke; /* update the colors and font sizes as you like */
+  color: black;
+  text-align: center;
+  font-size: 2rem;
+  display: flex; /* adds flexbox to center all items */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+#thanks-modal-content {
+  width: 20rem; /* sets a default width for the text container */
+}
+
+#modal-text-container {
+  display: flex; /* adds flexbox to center the text and buttons (stretch feature) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Community */
+.community-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.community-content {
+  width: 50%;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post, .reply {
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.reply-section {
+  margin-top: 10px;
+  padding-left: 25px;
+}
+
+.community-content button {
+  margin-top: 10px;
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #4A90E2;
+  color: white;
+  border-radius: 5px;
+}
+
+.community-content button:hover {
+  background-color: #0056b3;
+}
+
+.community-content input, .community-content textarea {
+  width: 97.75%;
+  max-width: 97.75%;
+  min-width: 97.75%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* News */
+.news-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-content {
+  width: 50%;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-content p {
+  padding: 0px;
+}
+
+/* Events */
+.events-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.events-content {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.events-content div {
+  width: 50%;
+  height: 50%;
+  text-align: left;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.events-content h3{
+  text-align: center;
+}
+
+/* Contact */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form {
+  width: 30%;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  height: 250px;
+}
+
+.contact-form button {
+  margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 25px 0px;
+  margin-top: 50px;
+}
+
+.footer p {
+  margin-top: 15px;
+}
+
+#logo-name {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#links a {
+  font-size: 18px;
+  padding: 0px 10px;
+}
+
+#copy {
+  font-size: 15px
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #2f2f2f;
+}
+
+/* Navbar in Dark Mode */
+.dark-mode .navbar {
+  background-color: #0a0a0a;
+}
+
+.dark-mode .navbar ul li a {
+  color: white;
+}
+
+/* Text and Links in Dark Mode */
+.dark-mode p,
+.dark-mode a:link,
+.dark-mode a:visited {
+  color: white;
+}
+
+/* Footer in Dark Mode */
+.dark-mode .footer {
+  background-color: #0a0a0a;
+  color: white;
+}
+
+/* General Content in Dark Mode */
+.dark-mode .community-content,
+.dark-mode .post,
+.dark-mode .reply,
+.dark-mode .about-content,
+.dark-mode .impact-content div,
+.dark-mode .petition-info,
+.dark-mode .petition-signatures,
+.dark-mode .news-content,
+.dark-mode .events-content div,
+.dark-mode .contact-form {
+  background-color: #0a0a0a;
+}
+
+/* Specific Button in Dark Mode */
+.dark-mode #theme-button {
+  background-color: white;
+  color: black;
+}
+
+/* List Styles in Dark Mode */
+.dark-mode ul {
+  color: white;
+}
+
+/* Animation */
+.revealable {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.active {
+  transform: translateY(0);
+  opacity: 1;
+}

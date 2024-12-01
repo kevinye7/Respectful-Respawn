@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Respectful Respawn</title> 
+    <link rel="icon" href="img/g.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="reset.css" rel="stylesheet" type="text/css" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div>
+            <a href="index.html">
+                <img id="navbar-img" src="img/g.png" alt="logo picture" width="40"/>
+            </a>
+        </div>
+        <div>
+            <ul>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="event.html">Event</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li ><button id="theme-button">Dark Mode</button></li>
+            <!-- Stretch Challenge: Drop Down -->
+            </ul>
+        </div>
+    </div>
+
+
+    <!--- Petition --->
+    <div class="petition-container">
+        <div class="section-header">
+            <h2>Sign Our Petition</h2>
+        </div>
+        <div class="petition-content" id="petition">
+
+            <div class="petition-info">
+                <div class="petition-description">
+                    <p>We believe that the gaming community should be a safe and inclusive environment for all players. Toxic behavior—including harassment, hate speech, and bullying—undermines the joy of gaming and drives many players away. Together, we can make a change!</p>
+                    
+                    <h3>Our Goals:</h3>
+                    <ul>
+                        <li>Promote Positive Engagement</li>
+                        <li>Enhance Reporting Systems</li>
+                        <li>Raise Awareness</li>
+                        <li>Support Victims</li>
+                    </ul>
+                </div>
+
+                <!--- Sign Petition Form --->
+                <form id="sign-petition" title="sign-petition">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="hometown">Hometown:</label>
+                    <input type="text" id="hometown" name="hometown" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </form>
+                
+                <!--- Sign Now Button --->
+                <button id="sign-now-button">Sign Now</button>
+            </div>
+
+            <div class="petition-signatures">
+                <h3>Current Signatures:</h3>
+                <p id="counter">5 supporters have signed this petition</p> 
+                
+                <h3>List of Signatures:</h3>
+                <div class="signature-list">
+                    <p>Emily Johnson - Seattle, WA</p>
+                    <p>Aisha Patel - Chicago, IL</p>
+                    <p>Maya Chen - San Francisco, CA</p>
+                    <p>David Kim - Los Angeles, CA</p>
+                    <p>Nina Gupta - New York, NY</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div id="thanks-modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <img src="img/kirby.png" alt="Kirby image" width="340"/>
+            <div id="modal-text-container">
+                <p id="thanks-modal-content">Test</p>
+                <!-- button here (stretch feature) -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div id="logo-name">
+            <p>Respectful Respawn</p>
+        </div>
+        <div id="links">
+            <a href="community.html">Community</a>
+            <a href="blog.html">Blog</a>
+            <a href="event.html">Event</a>
+            <a href="support.html">Support</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div id="copy">
+            <p>&copy; 2024 Respectful Respawn. All rights reserved.</p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Respectful Respawn</title> 
+    <link rel="icon" href="img/g.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="reset.css" rel="stylesheet" type="text/css" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div>
+            <a href="index.html">
+                <img id="navbar-img" src="img/g.png" alt="logo picture" width="40"/>
+            </a>
+        </div>
+        <div>
+            <ul>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="event.html">Event</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li ><button id="theme-button">Dark Mode</button></li>
+            <!-- Stretch Challenge: Drop Down -->
+            </ul>
+        </div>
+    </div>
+
+
+    <!--- Community --->
+    <div class="community-container" id="community">
+        <div class="section-header">
+            <h2>Community Discussion</h2>
+        </div>
+        <div class="community-content">
+            <div class="post-container">
+                <div class="post">
+                    <h3>Addressing Toxicity</h3>
+                    <h4>Post by Alice</h4>
+                    <p>I think we need to address the toxic behavior in our community more seriously.</p>
+                    <div class="reply-section">
+                        <div class="reply">
+                            <h4>Reply by Bob</h4>
+                            <p>I completely agree! We should have more awareness campaigns.</p>
+                        </div>
+                        <div class="reply-form" style="display: none;">
+                            <input type="text" class="replyName" placeholder="Your Name">
+                            <textarea class="replyMessage" placeholder="Your Message"></textarea>
+                            <button class="submitReply">Submit Reply</button>
+                        </div>
+                        <button class="reply-btn">Reply</button>
+                    </div>
+                </div>
+
+                <div class="post" id="post">
+                    <h3>Harassment Issues</h3>
+                    <h4>Post by Charlie</h4>
+                    <p>Has anyone else experienced harassment during matches? It's getting out of hand.</p>
+                    <div class="reply-section">
+                        <div class="reply">
+                            <h4>Reply by Dana</h4>
+                            <p>Yes! I've seen it happen to others too. We need to stand together against this.</p>
+                        </div>
+                        <div class="reply-form" style="display: none;">
+                            <input type="text" class="replyName" placeholder="Your Name">
+                            <textarea class="replyMessage" placeholder="Your Message"></textarea>
+                            <button class="submitReply">Submit Reply</button>
+                        </div>
+                        <button class="reply-btn">Reply</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="new-post">
+                <h3>New Post</h3>
+                <input type="text" id="postTitle" placeholder="Post Title">
+                <input type="text" id="postName" placeholder="Your Name">
+                <textarea id="postMessage" placeholder="Your Message"></textarea>
+                <button id="postButton">Post</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div id="logo-name">
+            <p>Respectful Respawn</p>
+        </div>
+        <div id="links">
+            <a href="community.html">Community</a>
+            <a href="blog.html">Blog</a>
+            <a href="event.html">Event</a>
+            <a href="support.html">Support</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div id="copy">
+            <p>&copy; 2024 Respectful Respawn. All rights reserved.</p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
