@@ -2,9 +2,27 @@
 let themeButton = document.getElementById("theme-button");
 const toggleDarkMode = () => {
     document.body.classList.toggle("dark-mode");
+
+    // Save the user's preference to localStorage
+    if (document.body.classList.contains("dark-mode")) {
+        localStorage.setItem('theme', 'dark');
+    } else {
+        localStorage.setItem('theme', 'light');
+    }
+}
+
+// Apply the saved theme on page load
+const applySavedTheme = () => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+    }
 }
 
 themeButton.addEventListener("click", toggleDarkMode);
+
+// Apply saved theme on page load
+applySavedTheme();
 
 // Revealable Containers Animation on Scroll
 let animation = {
